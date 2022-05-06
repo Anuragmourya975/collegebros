@@ -1,12 +1,13 @@
 import React from "react";
 import Cards from "./Cards";
+import Sidebar from "./Sidebar";
 
 function Dashboard() {
   return (
     <div>
-      <aside class="ml-[-100%] fixed z-10 top-0 pb-3 px-6 w-full flex flex-col justify-between h-screen border-r bg-white transition duration-300 md:w-4/12 lg:ml-0 lg:w-[25%] xl:w-[20%] 2xl:w-[15%]">
-        <div>
-          {/* <div class="mt-8 text-center">
+      {/* <aside class="ml-[-100%] fixed z-10 top-0 pb-3 px-6 w-full flex flex-col justify-between h-screen border-r bg-white transition duration-300 md:w-4/12 lg:ml-0 lg:w-[25%] xl:w-[20%] 2xl:w-[15%]"> */}
+      {/* <div> */}
+      {/* <div class="mt-8 text-center">
             <img
               src="images/second_user.webp"
               alt=""
@@ -17,10 +18,9 @@ function Dashboard() {
             </h5>
             <span class="hidden text-gray-400 lg:block">Admin</span>
           </div> */}
-
-          <ul class="space-y-2 tracking-wide mt-3">
-            <li>
-              {/* <div class="-mx-6 px-6 py-4">
+      {/* <ul class="space-y-2 tracking-wide mt-3"> */}
+      {/* <li> */}
+      {/* <div class="-mx-6 px-6 py-4">
             <a href="#" title="home">
               <img
                 src="https://flowbite.com/docs/images/logo.svg"
@@ -29,7 +29,7 @@ function Dashboard() {
               />
             </a>
           </div> */}
-
+      {/* 
               <a
                 href="#"
                 aria-label="dashboard"
@@ -151,8 +151,8 @@ function Dashboard() {
               </a>
             </li>
           </ul>
-        </div>
-
+        </div> */}
+      {/* 
         <div class="px-6 -mx-6 pt-4 flex justify-between items-center border-t">
           <button class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group">
             <svg
@@ -171,8 +171,10 @@ function Dashboard() {
             </svg>
             <span class="group-hover:text-gray-700">Logout</span>
           </button>
-        </div>
-      </aside>
+        </div> */}
+      {/* </aside> */}
+      <Sidebar />
+
       <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
         <div class="sticky z-10 top-0 h-16 border-b bg-white lg:py-2.5">
           <div class="px-6 flex items-center justify-between space-x-4 2xl:container">
@@ -297,10 +299,10 @@ function Dashboard() {
         </div>
 
         <div class="px-6 pt-6 2xl:container">
-          <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div class="md:col-span-2 lg:col-span-1">
+          <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+            {/* <div class="md:col-span-2 lg:col-span-1">
               <Cards />
-            </div>
+            </div> */}
             <Cards />
             <Cards />
             <Cards />
